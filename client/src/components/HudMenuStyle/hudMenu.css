@@ -8,6 +8,22 @@
     overflow-y: auto;
 }
 
+.saved-message {
+    position: absolute;
+    background-color: #ffffff;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: #ed6736;
+    margin-top: calc(0.5 * var(--grid-cell));
+    margin-left: calc(1.1 * var(--grid-cell));
+    height: calc(0.5 * var(--grid-cell));
+    width: calc(2.7 * var(--grid-cell));
+    text-align: center;
+    font-size: calc(0.4 * var(--grid-cell));
+    box-shadow: 0px 0px 10px 10px #beb582;
+}
+
 .hud-menu-container {
     background-color: #9b946a;
     border-style: groove;
@@ -24,14 +40,13 @@
 
 .hud-menu-container h2 {
     text-align: center;
-    margin-left: calc(0.2 * var(--grid-cell));
     font-size: calc(0.23 * var(--grid-cell));
 }
 
 .hud-menu-save {
     position: absolute;
     margin-top: calc(0.5 * var(--grid-cell));
-    margin-left: calc(1 * var(--grid-cell));
+    margin-left: calc(1.2 * var(--grid-cell));
     height: calc(0.2 * var(--grid-cell));
     width: calc(2.48 * var(--grid-cell));
 }
@@ -50,7 +65,7 @@
 .hud-menu-return {
     position: absolute;
     margin-top: calc(1.4 * var(--grid-cell));
-    margin-left: calc(0.3 * var(--grid-cell));
+    margin-left: calc(0.45 * var(--grid-cell));
     height: calc(0.2 * var(--grid-cell));
     width: calc(3.96 * var(--grid-cell));
 }

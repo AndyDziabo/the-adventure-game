@@ -8,6 +8,7 @@ import "./HudMenuStyle/hudMenu.css";
 
 function HudMenu({ setToggleMenu }) {
     const [errors, setErrors] = useState([]);
+    const [saved, setSaved] = useState(false);
     const game = useSelector((state) => state.game.value);
     const action = useSelector((state) => state.action.value);
     const inventory = useSelector((state) => state.inventory.value);
@@ -69,6 +70,10 @@ function HudMenu({ setToggleMenu }) {
                             }).then((r) => {
                                 if(r.ok){
                                     console.log("game saved");
+                                    setSaved(true);
+                                    setTimeout(function(){
+                                      setSaved(false);
+                                    },2400);
                                 }else{
                                     r.json().then((err) => setErrors(err));
                                 }
@@ -93,6 +98,7 @@ function HudMenu({ setToggleMenu }) {
                 <div className="hud-menu-return" onClick={() => setToggleMenu(false)}>
                     <img src={returnTo} alt="return" />
                 </div>
+                {saved ? <div className="saved-message">Game Saved</div> : null }
                 <div className="hud-menu-exit">
                     <NavLink to="/" exact>
                         <img src={mainMenuImg} alt="main-menu" />

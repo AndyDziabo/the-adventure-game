@@ -20,13 +20,13 @@
 
 .main-menu h2 {
     text-align: center;
-    margin-left: calc(0.2 * var(--grid-cell));
+    /* margin-left: calc(0.2 * var(--grid-cell)); */
     font-size: calc(0.23 * var(--grid-cell));
 }
 
 .menu-new-game {
     position: absolute;
-    margin-left: calc(3.2 * var(--grid-cell));
+    margin-left: calc(3.1 * var(--grid-cell));
     height: calc(0.2 * var(--grid-cell));
     width: calc(2 * var(--grid-cell));
 }
@@ -45,7 +45,7 @@
 .menu-saved-game {
     position: absolute;
     margin-top: calc(0.5 * var(--grid-cell));
-    margin-left: calc(3 * var(--grid-cell));
+    margin-left: calc(2.9 * var(--grid-cell));
     height: calc(0.2 * var(--grid-cell));
     width: calc(2.42 * var(--grid-cell));
 }
@@ -64,7 +64,7 @@
 .menu-settings {
     position: absolute;
     margin-top: calc(1 * var(--grid-cell));
-    margin-left: calc(3.24 * var(--grid-cell));
+    margin-left: calc(3.14 * var(--grid-cell));
     height: calc(0.2 * var(--grid-cell));
     width: calc(1.93 * var(--grid-cell));
 }
@@ -83,7 +83,7 @@
 .menu-high-scores {
     position: absolute;
     margin-top: calc(1.5 * var(--grid-cell));
-    margin-left: calc(2.95 * var(--grid-cell));
+    margin-left: calc(2.85 * var(--grid-cell));
     height: calc(0.2 * var(--grid-cell));
     width: calc(2.5 * var(--grid-cell));
 }
