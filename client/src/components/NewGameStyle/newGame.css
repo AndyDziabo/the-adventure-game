@@ -25,6 +25,11 @@
     border-color: #ed6736;
     width: calc(2 * var(--grid-cell));
     height: calc(0.3 * var(--grid-cell));
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(0.25 * var(--grid-cell));
+    font-weight: bolder;
+    color: #5f4528;
+    text-shadow: 2px 2px 5px #ed6736;
 }
 
 .create-game {
