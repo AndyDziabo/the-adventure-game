@@ -19,7 +19,8 @@ class SavedGamesController < ApplicationController
     end
 
     def high_scores
-        highScore = SavedGame.all
+        highScore = SavedGame.all.limit(10).order(score: :desc)
+        render json: highScore, status: :ok
     end
 
     private

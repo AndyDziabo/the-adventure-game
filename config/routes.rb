@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get "user_settings", to: "users#user_settings"
   get "saved_list", to: "users#saved_list"
+  get "high_scores", to: "saved_games#high_scores"
   
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!

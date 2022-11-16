@@ -64,8 +64,8 @@ function LoginForm({ onLogin }) {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
-              <div className="login-button">
-                <img onClick={handleSubmit} src={loginImg} />
+              <div className="login-button" onClick={handleSubmit}>
+                <img src={loginImg} />
               </div>
                 
           

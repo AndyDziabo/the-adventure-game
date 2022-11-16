@@ -1,5 +1,66 @@
 .high-score-container {
   background-color: #beb582;
   position: relative;
-  height: calc(3.65 * var(--grid-cell));
+  border-radius: 5px;
+  margin: auto;
+  height: calc(3.6 * var(--grid-cell));
+  width: calc(6.2 * var(--grid-cell));
+  font-size: calc(0.24 * var(--grid-cell));
+}
+
+.high-score-container li {
+  list-style-type: none;
+}
+
+.score-num {
+  background-color: #837c58;
+  position: relative;
+  display: inline-block;
+  padding-left: calc(0.1 * var(--grid-cell));
+  margin-top: calc(0.1 * var(--grid-cell));
+  margin-left: calc(0.4 * var(--grid-cell));
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: calc(0.27 * var(--grid-cell));
+  width: calc(0.32 * var(--grid-cell));
+}
+
+.score-name{
+  background-color: #837c58;
+  display: inline-block;
+  width: calc(3.5 * var(--grid-cell));
+  height: calc(0.27 * var(--grid-cell));
+}
+
+.score-value {
+  background-color: #837c58;
+  display: inline-block;
+  height: calc(.27 * var(--grid-cell));
+  width: calc(1.56 * var(--grid-cell));
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: calc(0.1 * var(--grid-cell));
+  text-align: right;
+}
+
+.score-main-menu {
+  position: absolute;
+  margin-top: calc(0.1 * var(--grid-cell));
+  margin-left: calc(3.0 * var(--grid-cell));
+  background-color: #837c58;
+  border-style: groove;
+  border-width: 0.5em;
+  border-radius: 5px;
+  border-color: #ed6736;
+  padding: 0.3% 1%;
+}
+
+.score-main-menu img {
+  width: calc(1.6 * var(--grid-cell));
+  height: calc(0.2 * var(--grid-cell));
+}
+
+.score-main-menu:hover {
+  background-color: #beb582;
+  box-shadow: 0px 0px 10px 8px #beb582;
 }

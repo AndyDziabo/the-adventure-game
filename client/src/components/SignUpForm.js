@@ -99,8 +99,8 @@ function SignUpForm({ onLogin }) {
                   autoComplete="current-password"
                 />
                 </div>
-              <div className="sign-up-submit-button">
-                <img onClick={handleSubmit} src={signUpImg} />
+              <div className="sign-up-submit-button" onClick={handleSubmit}>
+                <img src={signUpImg} />
               </div>
         </form>
         {toggleError ? <Error key={errors} errors={errors} /> : null}

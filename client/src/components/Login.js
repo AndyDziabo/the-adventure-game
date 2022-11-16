@@ -21,8 +21,8 @@ function Login({ onLogin }) {
           <div className="login-message">
             <h3>Don't have an account?</h3>
           </div>
-          <div className="sign-up-button">
-            <img onClick={() => setShowLogin(false)} src={signUp} />
+          <div className="sign-up-button" onClick={() => setShowLogin(false)}>
+            <img src={signUp} />
           </div>
         </div>
       : 
@@ -34,8 +34,8 @@ function Login({ onLogin }) {
           <div className="sign-up-message">
             <h3>Already have an account?</h3>
           </div>
-          <div className="sign-up-switch-button">
-            <img onClick={() => setShowLogin(true)} src={login} />
+          <div className="sign-up-switch-button" onClick={() => setShowLogin(true)}>
+            <img src={login} />
           </div>
             
           
