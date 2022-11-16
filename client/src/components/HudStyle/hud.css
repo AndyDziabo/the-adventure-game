@@ -8,8 +8,8 @@
     --character-y: 110;
     --map-x: 0;
     --map-y: 0;
-    --map-upper-x: -65;
-    --map-upper-y: -65;
+    --map-upper-x: (-65);
+    --map-upper-y: (-65);
     --map-img: url("../images/LevelOne.png");
  }
  
@@ -68,12 +68,12 @@
 
  .LevelOne {
    background-image: url("../images/LevelOne_lower.png");
-   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)*-1), 0);
+   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)* -1), 0);
  }
 
  .LevelTwo {
    background-image: url("../images/LevelTwo_lower.png");
-   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)*-1), 0);
+   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)* -1), 0);
  }
 
  .LevelOneUpper {
@@ -380,7 +380,7 @@
        transform: translate3d(0%,0%,0);
      }
      to {
-       transform: translate3d(-100%,0%,0);
+       transform: translate3d( -100%,0%,0);
      }
    }
 
