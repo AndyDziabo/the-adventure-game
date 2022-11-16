@@ -1,0 +1,295 @@
+.main-login {
+    background-color: #9b946a;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    margin-top: calc(1 * var(--grid-cell));
+    margin-left: calc(0.2 * var(--grid-cell));
+    height: calc(3 * var(--grid-cell));
+    width: calc(5 * var(--grid-cell));
+    font-weight: bolder;
+    color: #5f4528;
+    text-shadow: 2px 1px 4px #ed6736;
+}
+
+.main-login h1 {
+    text-align: center;
+    font-size: calc(0.4 * var(--grid-cell));
+}
+
+.username {
+    position: absolute;
+    margin-left: calc(0.8 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.username img {
+    width: calc(1.45 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.username-text {
+    position: absolute;
+    margin-left: calc(2.5 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.password {
+    position: absolute;
+    margin-top: calc(0.35 * var(--grid-cell));
+    margin-left: calc(0.8 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.password img {
+    width: calc(1.5 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.password-text {
+    position: absolute;
+    margin-top: calc(0.35 * var(--grid-cell));
+    margin-left: calc(2.5 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.login-button {
+    position: absolute;
+    margin-top: calc(0.8 * var(--grid-cell));
+    margin-left: calc(2.1 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.login-button:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.login-button img {
+    width: calc(0.75 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.login-button button {
+    background-color: transparent;
+}
+
+.login-message {
+    position: absolute;
+    margin-top: calc(1.41 * var(--grid-cell));
+    margin-left: calc(0.5 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(2.2 * var(--grid-cell));
+}
+
+.login-message h3 {
+    font-size: calc(0.16 * var(--grid-cell));
+}
+
+.login-message-image {
+    position: absolute;
+    background-color: aliceblue;
+    margin-top: calc(1.51 * var(--grid-cell));
+    margin-left: calc(2.8 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.2 * var(--grid-cell));
+}
+
+.sign-up-button {
+    position: absolute;
+    margin-top: calc(1.45 * var(--grid-cell));
+    margin-left: calc(2.8 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.sign-up-button img {
+    width: calc(1 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.sign-up-button:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.sign-up-username {
+    position: absolute;
+    margin-left: calc(1.44 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.sign-up-username img {
+    width: calc(1.45 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.sign-up-username-text {
+    position: absolute;
+    margin-left: calc(3 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.login-container input {
+    background-color: #beb582;
+    height: calc(0.21 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+    border-radius: 8px;
+    border-color: #ed6736;
+}
+
+.email {
+    position: absolute;
+    margin-top: calc(0.35 * var(--grid-cell));
+    margin-left: calc(1.9 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.email img {
+    width: calc(1 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.email-text {
+    position: absolute;
+    margin-top: calc(0.35 * var(--grid-cell));
+    margin-left: calc(3 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.sign-up-password {
+    position: absolute;
+    margin-top: calc(0.7 * var(--grid-cell));
+    margin-left: calc(1.28 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.sign-up-password img {
+    width: calc(1.6 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.sign-up-password-text {
+    position: absolute;
+    margin-top: calc(0.7 * var(--grid-cell));
+    margin-left: calc(3 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.sign-up-confirm {
+    position: absolute;
+    margin-top: calc(1.05 * var(--grid-cell));
+    margin-left: calc(0.2 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.sign-up-confirm img {
+    width: calc(2.7 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.sign-up-confirm-text {
+    position: absolute;
+    margin-top: calc(1.05 * var(--grid-cell));
+    margin-left: calc(3 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(1.7 * var(--grid-cell));
+}
+
+.sign-up-submit-button {
+    position: absolute;
+    margin-top: calc(1.4 * var(--grid-cell));
+    margin-left: calc(2.4 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.sign-up-submit-button:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.sign-up-submit-button img {
+    width: calc(1 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+
+.main-sign-up {
+    background-color: #9b946a;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    margin-top: calc(1 * var(--grid-cell));
+    margin-left: calc(0.2 * var(--grid-cell));
+    height: calc(3.8 * var(--grid-cell));
+    width: calc(5 * var(--grid-cell));
+    font-weight: bolder;
+    color: #5f4528;
+    text-shadow: 2px 1px 4px #ed6736;
+}
+
+.main-sign-up h1 {
+    text-align: center;
+    font-size: calc(0.4 * var(--grid-cell));
+}
+
+.sign-up-message {
+    position: absolute;
+    margin-top: calc(2.1 * var(--grid-cell));
+    margin-left: calc(0.3 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+    width: calc(2.4 * var(--grid-cell));
+}
+
+.sign-up-message h3 {
+    font-size: calc(0.16 * var(--grid-cell));
+}
+
+.sign-up-switch-button {
+    position: absolute;
+    margin-top: calc(2.1 * var(--grid-cell));
+    margin-left: calc(2.8 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.sign-up-switch-button img {
+    width: calc(1 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.sign-up-switch-button:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}

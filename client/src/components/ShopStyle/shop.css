@@ -1,0 +1,187 @@
+.shop {
+    background-image: url("../images/shop.png");
+    background-size: 100%;
+    width: calc(5 * var(--grid-cell));
+    height: calc(5 * var(--grid-cell));
+}
+
+.shop-left {
+    position: relative;
+    display: inline;
+}
+
+.shop-exit {
+    position: absolute;
+    margin-top: calc(0.3 * var(--grid-cell));
+    margin-left: calc(0.2 * var(--grid-cell));
+    height: calc(0.65 * var(--grid-cell));
+    width: calc(0.8 * var(--grid-cell));
+}
+
+.shop-exit img {
+    width: calc(0.8 * var(--grid-cell));
+    height: calc(0.7 * var(--grid-cell));
+}
+
+.shop-exit:hover {
+    background-color: #ed673666;
+    box-shadow: 0px 0px 50px #ed6736;
+    border-radius: 40%;
+}
+
+.shop-right {
+    float: right;
+}
+
+.shop-board-TL {
+    position: absolute;
+    margin-top: calc(0.41 * var(--grid-cell));
+    right: calc(1.94 * var(--grid-cell));
+    height: calc(0.6 * var(--grid-cell));
+    width: calc(0.7 * var(--grid-cell));
+}
+
+.shop-board-TL:hover {
+    background-color: rgba(92, 150, 200, 0.541);
+    box-shadow: 0px 0px 50px rgb(92, 150, 200);
+}
+
+.shop-board-TL img {
+    width: calc(1.15 * var(--grid-cell));
+    height: calc(1.2 * var(--grid-cell));
+}
+
+.shop-board-BL {
+    position: absolute;
+    margin-top: calc(1.01 * var(--grid-cell));
+    right: calc(1.56 * var(--grid-cell));
+    height: calc(1.2 * var(--grid-cell));
+    width: calc(1.2 * var(--grid-cell));
+}
+
+.shop-board-BL:hover {
+    background-color: rgba(92, 150, 200, 0.495);
+    border-radius: 20%;
+    box-shadow: 0px 0px 50px rgb(92, 150, 200);
+}
+
+.shop-board-BL img {
+    width: calc(1.1 * var(--grid-cell));
+    height: calc(1.25 * var(--grid-cell));
+}
+
+.shop-board-BR {
+    position: absolute;
+    margin-top: calc(1.07 * var(--grid-cell));
+    right: calc(0.38 * var(--grid-cell));
+    height: calc(1.2 * var(--grid-cell));
+    width: calc(1.2 * var(--grid-cell));
+}
+
+.shop-board-BR:hover {
+    background-color: rgba(92, 150, 200, 0.495);
+    border-radius: 20%;
+    box-shadow: 0px 0px 50px rgb(92, 150, 200);
+}
+
+.shop-board-BR img {
+    width: calc(1.27 * var(--grid-cell));
+    height: calc(1.28 * var(--grid-cell));
+}
+
+.shop-purchase-container {
+    position: absolute;
+    margin-top: calc(0.1 * var(--grid-cell));
+    margin-left: calc(0.1 * var(--grid-cell));
+    height: calc(0.85 * var(--grid-cell));
+    width: calc(1.8 * var(--grid-cell));
+}
+
+.shop-purchase {
+    background-image: url("../images/speach.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: calc(0.8 * var(--grid-cell));
+    margin-left: calc(2.1 * var(--grid-cell));
+    height: calc(2 * var(--grid-cell));
+    width: calc(2.0 * var(--grid-cell));
+}
+
+.shop-purchase img {
+    position: absolute;
+}
+
+.shop-buy-btn {
+    position: absolute;
+    margin-top: calc(0.05 * var(--grid-cell));
+    width: calc(0.5 * var(--grid-cell));
+    height: calc(0.15 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.shop-buy-btn img {
+    margin-top: calc(0.004 * var(--grid-cell));
+    width: calc(0.5 * var(--grid-cell));
+    height: calc(0.15 * var(--grid-cell));
+}
+
+.shop-buy-btn:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.shop-no-btn {
+    position: absolute;
+    width: calc(0.8 * var(--grid-cell));
+    height: calc(0.15 * var(--grid-cell));
+    background-color: #837c58;
+    margin-left: calc(0.85 * var(--grid-cell));
+    margin-top: calc(0.05 * var(--grid-cell));
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.shop-no-btn img {
+    margin-top: calc(0.004 * var(--grid-cell));
+    width: calc(0.8 * var(--grid-cell));
+    height: calc(0.15 * var(--grid-cell));
+}
+
+.shop-no-btn:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.shop-ok-btn {
+    position: absolute;
+    width: calc(0.3 * var(--grid-cell));
+    height: calc(0.15 * var(--grid-cell));
+    background-color: #837c58;
+    margin-left: calc(1.35 * var(--grid-cell));
+    margin-top: calc(0.05 * var(--grid-cell));
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.shop-ok-btn img {
+    margin-top: calc(0.004 * var(--grid-cell));
+    width: calc(0.3 * var(--grid-cell));
+    height: calc(0.15 * var(--grid-cell));
+}
+
+.shop-ok-btn:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}

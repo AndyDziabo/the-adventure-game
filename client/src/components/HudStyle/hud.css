@@ -1,0 +1,464 @@
+:root {
+    --pixel-size: 2px;
+    --grid-cell: calc( var(--pixel-size) * 32);
+    --bg: #8d7755;
+    --player-x: 65;
+    --player-y: 65;
+    --character-x: 110;
+    --character-y: 110;
+    --map-x: 0;
+    --map-y: 0;
+    --map-upper-x: -65;
+    --map-upper-y: -65;
+    --map-img: url("../images/LevelOne.png");
+ }
+ 
+ @media( min-width: 700px ) {
+    :root {
+       --pixel-size: 3px;
+    }
+ }
+ 
+ @media( min-width: 1000px ) {
+    :root {
+       --pixel-size: 4px;
+    }
+ }
+  
+ @media( min-width: 1300px ) {
+    :root {
+       --pixel-size: 5px;
+    }
+ }
+ 
+  body {
+     background: var(--bg);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+ 
+  .pixel-art {
+     image-rendering: pixelated;
+  }
+
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.camera {
+    width: calc(var(--pixel-size) * 160);
+    height: calc(var(--pixel-size) * 144);
+    overflow: hidden;
+    background: #5fcde4;
+    position:relative;
+    
+ }
+
+ .map {
+    image-rendering: pixelated;
+    background-size: 100%;
+    width: calc(20 * var(--grid-cell));
+    height: calc(10 * var(--grid-cell));
+    
+    position: relative;
+ }
+
+ .LevelOne {
+   background-image: url("../images/LevelOne_lower.png");
+   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)*-1), 0);
+ }
+
+ .LevelTwo {
+   background-image: url("../images/LevelTwo_lower.png");
+   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)*-1), 0);
+ }
+
+ .LevelOneUpper {
+   background-image: url("../images/LevelOne_upper.png");
+ }
+
+ .LevelTwoUpper {
+   background-image: url("../images/LevelTwo_upper.png");
+ }
+
+.player {
+    position: absolute;
+    transform: translate3d(calc(var(--player-x)*var(--pixel-size)), calc(var(--player-y)*var(--pixel-size)), 0);
+}
+
+.character {
+   position: absolute;
+   transform: translate3d(calc(var(--character-x)*var(--pixel-size)), calc(var(--character-y)*var(--pixel-size)), 0);
+}
+
+.patrol {
+   animation: patrolAnimation 15s steps(64) infinite;
+}
+
+@keyframes patrolAnimation {
+0%{
+   left: 0px;
+   top: 0px;
+}
+25%{
+   left:calc(var(--pixel-size)*100);
+   
+   top: 0px;
+}
+50%{
+   left:calc(var(--pixel-size)*100);
+   top:calc(var(--pixel-size)*100);
+}
+75%{
+   left:0px;
+   top: calc(var(--pixel-size)*100);
+}
+100%{
+   left: 0px;
+   top: 0px;
+}
+}
+
+.char-img {
+   width: calc( var(--grid-cell)* 0.7);
+   height: calc( var(--grid-cell)* 0.7);
+}
+
+.coin-img {
+   width: calc( var(--grid-cell)* 0.5);
+   height: calc( var(--grid-cell)* 0.5);
+}
+
+.player-bound {
+   overflow: hidden;
+   width: calc( var(--grid-cell)* 1 );
+}
+
+.player-spritesheet {
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+}
+
+.right {
+   background-image: url("../images/MainCharacter.png");
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .up {
+   background-image: url("../images/MainCharacter.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .down {
+   background-image: url("../images/MainCharacter.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .left {
+   background-image: url("../images/MainCharacter-left.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+
+ .right-axe {
+   background-image: url("../images/MainCharacter-axe.png");
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .up-axe {
+   background-image: url("../images/MainCharacter-axe.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .down-axe {
+   background-image: url("../images/MainCharacter-axe.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .left-axe {
+   background-image: url("../images/MainCharacter-left-axe.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+
+ .right-sword {
+   background-image: url("../images/MainCharacter-sword.png");
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .up-sword {
+   background-image: url("../images/MainCharacter-sword.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .down-sword {
+   background-image: url("../images/MainCharacter-sword.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+ .left-sword {
+   background-image: url("../images/MainCharacter-left-sword.png");
+   background-repeat: no-repeat;
+   width: calc( var(--grid-cell)* 1 );
+   height: calc( var(--grid-cell)* 1 );
+ }
+
+ .walking-right {
+    background-image: url("../images/MainCharacter-walkRight.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: calc( var(--grid-cell)* 8);
+    height: calc( var(--grid-cell)* 1 );
+    animation: walkAnimation 0.6s steps(4) infinite; 
+   }
+
+   .walking-left {
+      background-image: url("../images/MainCharacter-walkLeft.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      width: calc( var(--grid-cell)* 8);
+      height: calc( var(--grid-cell)* 1 );
+      animation: walkAnimation 0.6s steps(4) infinite; 
+     }
+
+     .walking-up {
+      background-image: url("../images/MainCharacter-walkLeft.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      width: calc( var(--grid-cell)* 8);
+      height: calc( var(--grid-cell)* 1 );
+      animation: walkAnimation 0.6s steps(4) infinite; 
+     }
+
+     .walking-down {
+      background-image: url("../images/MainCharacter-walkLeft.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      width: calc( var(--grid-cell)* 8);
+      height: calc( var(--grid-cell)* 1 );
+      animation: walkAnimation 0.6s steps(4) infinite; 
+     }
+
+     .walking-right-axe {
+      background-image: url("../images/MainCharacter-walkRight-axe.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      width: calc( var(--grid-cell)* 8);
+      height: calc( var(--grid-cell)* 1 );
+      animation: walkAnimation 0.6s steps(4) infinite; 
+     }
+  
+     .walking-left-axe {
+        background-image: url("../images/MainCharacter-walkLeft-axe.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: calc( var(--grid-cell)* 8);
+        height: calc( var(--grid-cell)* 1 );
+        animation: walkAnimation 0.6s steps(4) infinite; 
+       }
+  
+       .walking-up-axe {
+        background-image: url("../images/MainCharacter-walkLeft-axe.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: calc( var(--grid-cell)* 8);
+        height: calc( var(--grid-cell)* 1 );
+        animation: walkAnimation 0.6s steps(4) infinite; 
+       }
+  
+       .walking-down-axe {
+        background-image: url("../images/MainCharacter-walkLeft-axe.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: calc( var(--grid-cell)* 8);
+        height: calc( var(--grid-cell)* 1 );
+        animation: walkAnimation 0.6s steps(4) infinite; 
+       }
+
+       .walking-right-axe {
+         background-image: url("../images/MainCharacter-walkRight-axe.png");
+         background-repeat: no-repeat;
+         background-size: 100%;
+         position: relative;
+         width: calc( var(--grid-cell)* 8);
+         height: calc( var(--grid-cell)* 1 );
+         animation: walkAnimation 0.6s steps(4) infinite; 
+        }
+     
+        .walking-left-axe {
+           background-image: url("../images/MainCharacter-walkLeft-axe.png");
+           background-repeat: no-repeat;
+           background-size: 100%;
+           position: relative;
+           width: calc( var(--grid-cell)* 8);
+           height: calc( var(--grid-cell)* 1 );
+           animation: walkAnimation 0.6s steps(4) infinite; 
+          }
+     
+          .walking-up-axe {
+           background-image: url("../images/MainCharacter-walkLeft-axe.png");
+           background-repeat: no-repeat;
+           background-size: 100%;
+           position: relative;
+           width: calc( var(--grid-cell)* 8);
+           height: calc( var(--grid-cell)* 1 );
+           animation: walkAnimation 0.6s steps(4) infinite; 
+          }
+     
+          .walking-down-axe {
+           background-image: url("../images/MainCharacter-walkLeft-axe.png");
+           background-repeat: no-repeat;
+           background-size: 100%;
+           position: relative;
+           width: calc( var(--grid-cell)* 8);
+           height: calc( var(--grid-cell)* 1 );
+           animation: walkAnimation 0.6s steps(4) infinite; 
+          }
+          
+   .walking-right-sword {
+      background-image: url("../images/MainCharacter-walkRight-sword.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      width: calc( var(--grid-cell)* 8);
+      height: calc( var(--grid-cell)* 1 );
+      animation: walkAnimation 0.6s steps(4) infinite; 
+     }
+  
+     .walking-left-sword {
+        background-image: url("../images/MainCharacter-walkLeft-sword.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: calc( var(--grid-cell)* 8);
+        height: calc( var(--grid-cell)* 1 );
+        animation: walkAnimation 0.6s steps(4) infinite; 
+       }
+  
+       .walking-up-sword {
+        background-image: url("../images/MainCharacter-walkLeft-sword.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: calc( var(--grid-cell)* 8);
+        height: calc( var(--grid-cell)* 1 );
+        animation: walkAnimation 0.6s steps(4) infinite; 
+       }
+  
+       .walking-down-sword {
+        background-image: url("../images/MainCharacter-walkLeft-sword.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        width: calc( var(--grid-cell)* 8);
+        height: calc( var(--grid-cell)* 1 );
+        animation: walkAnimation 0.6s steps(4) infinite; 
+       }
+   
+   @keyframes walkAnimation {
+     from {
+       transform: translate3d(0%,0%,0);
+     }
+     to {
+       transform: translate3d(-100%,0%,0);
+     }
+   }
+
+   .hud-statusbar {
+      background-color: #726045;
+      padding: 20px;
+   }
+
+   .health {
+      display: inline-block;
+      margin-right: 30px;
+   }
+
+   .health-title {
+      position: absolute;
+      display: inline-block;
+      margin-right: 60px;
+   }
+
+   .health-bar {
+      position: relative;
+      display: inline-block;
+      background-color: black;
+      height: 20px;
+      width: 180px;
+      margin-left: 60px;
+   }
+   
+   .coins {
+      display: inline-block;
+      margin-right: 30px;
+   }
+
+   .coins-title {
+      position: absolute;
+      display: inline-block;
+      margin-right: 30px;
+   }
+
+   .coins-bar {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-color: #8d7755;
+      border-style: solid;
+      border-width: thin;
+      border-radius: 3px;
+      margin-left: 50px;
+      padding-left: 10px;
+      
+   }
+
+   .score {
+      float: right;
+      margin-right: 30px;
+   }
+
+   .score-title {
+      position: absolute;
+      display: inline-block;
+      margin-right: 50px;
+   }
+
+   .score-bar {
+      text-align: right;
+      padding-right: 5px;
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      width: 80px;
+      background-color: #8d7755;
+      border-style: solid;
+      border-width: thin;
+      border-radius: 3px;
+      margin-left: 50px;
+   }
+
+   .start {
+      margin-top: 200px;
+   }

@@ -1,0 +1,5 @@
+.high-score-container {
+  background-color: #beb582;
+  position: relative;
+  height: calc(3.65 * var(--grid-cell));
+}

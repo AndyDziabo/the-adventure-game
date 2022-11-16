@@ -1,0 +1,101 @@
+.save-main-menu {
+    position: absolute;
+    margin-left: calc(3.0 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.save-list li {
+    list-style-type: none;
+}
+
+.save-main-menu img {
+    width: calc(1.6 * var(--grid-cell));
+    height: calc(0.2 * var(--grid-cell));
+}
+
+.save-main-menu:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.save-list {
+    position: relative;
+    height: calc(4.15 * var(--grid-cell));
+}
+
+.save-select {
+    position: relative;
+    display: inline-block;
+    margin-left: calc(0.38 * var(--grid-cell));
+    height: calc(0.2 * var(--grid-cell));
+    width: calc(1.56 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.save-select img {
+    width: calc(1.6 * var(--grid-cell));
+    height: calc(0.2 * var(--grid-cell));
+}
+
+.save-select:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.save-name{
+    background-color: #beb582;
+    display: inline-block;
+    padding-left: calc(0.3 * var(--grid-cell));
+    font-size: calc(0.24 * var(--grid-cell));
+    width: calc(3.2 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.save-delete {
+    display: inline-block;
+    height: calc(.2 * var(--grid-cell));
+    width: calc(1.56 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.save-delete img {
+    width: calc(1.6 * var(--grid-cell));
+    height: calc(0.2 * var(--grid-cell));
+}
+
+.save-delete:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
+
+.start-game {
+    margin-top: calc(1.5 * var(--grid-cell));
+    height: calc(0.8 * var(--grid-cell));
+    width: calc(4.58 * var(--grid-cell));
+}
+
+.start-game img {
+    width: calc(4.58 * var(--grid-cell));
+    height: calc(2 * var(--grid-cell));
+}
+
+.start-game:hover {
+    background-color: #beb582;
+    border-radius: 50%;
+    box-shadow: 0px 15px 60px 30px #beb582,0px 20px 100px 50px #ffffff;
+}

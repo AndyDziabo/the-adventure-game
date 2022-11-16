@@ -1,0 +1,89 @@
+.hud-menu-main{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.hud-menu-container {
+    background-color: #9b946a;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    margin: auto;
+    width: calc(4.93 * var(--grid-cell));
+    height: calc(4.4 * var(--grid-cell));
+    font-weight: bolder;
+    color: #5f4528;
+    text-shadow: 2px 1px 4px #ed6736;
+}
+
+.hud-menu-container h2 {
+    text-align: center;
+    margin-left: calc(0.2 * var(--grid-cell));
+    font-size: calc(0.23 * var(--grid-cell));
+}
+
+.hud-menu-save {
+    position: absolute;
+    margin-top: calc(0.5 * var(--grid-cell));
+    margin-left: calc(1 * var(--grid-cell));
+    height: calc(0.2 * var(--grid-cell));
+    width: calc(2.48 * var(--grid-cell));
+}
+
+.hud-menu-save:hover {
+    background-color: #beb582;
+    border-radius: 50%;
+    box-shadow: 0px 15px 15px 15px #beb582,0px 20px 20px 20px #ffffff;
+}
+
+.hud-menu-save img {
+    width: calc(2.5 * var(--grid-cell));
+    height: calc(0.4 * var(--grid-cell));
+}
+
+.hud-menu-return {
+    position: absolute;
+    margin-top: calc(1.4 * var(--grid-cell));
+    margin-left: calc(0.3 * var(--grid-cell));
+    height: calc(0.2 * var(--grid-cell));
+    width: calc(3.96 * var(--grid-cell));
+}
+
+.hud-menu-return:hover {
+    background-color: #beb582;
+    border-radius: 50%;
+    box-shadow: 0px 15px 15px 15px #beb582,0px 20px 20px 20px #ffffff;
+}
+
+.hud-menu-return img {
+    width: calc(4 * var(--grid-cell));
+    height: calc(0.4 * var(--grid-cell));
+}
+
+.hud-menu-exit {
+    position: absolute;
+    margin-top: calc(3 * var(--grid-cell));
+    margin-left: calc(1.7 * var(--grid-cell));
+    background-color: #837c58;
+    border-style: groove;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color: #ed6736;
+    padding: 0.3% 1%;
+}
+
+.hud-menu-exit img {
+    width: calc(1 * var(--grid-cell));
+    height: calc(0.25 * var(--grid-cell));
+}
+
+.hud-menu-exit:hover {
+    background-color: #beb582;
+    box-shadow: 0px 0px 10px 8px #beb582;
+}
