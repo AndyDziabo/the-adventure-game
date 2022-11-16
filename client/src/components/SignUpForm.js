@@ -103,7 +103,13 @@ function SignUpForm({ onLogin }) {
                 <img src={signUpImg} />
               </div>
         </form>
-        {toggleError ? <Error key={errors} errors={errors} /> : null}
+        {toggleError ? 
+          <div className="error-container2">
+            <div>{errors[0]}</div>
+          </div>
+        :
+        null
+        }
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ function LoginForm({ onLogin }) {
         setToggleError(true);
         setTimeout(function(){
           setToggleError(false);
-        },2400);
+        }, 2400);
       }
     });
   }
@@ -70,8 +70,13 @@ function LoginForm({ onLogin }) {
                 
           
         </form>
-        <div className={toggleError ? "login-error" : "hide" }>{errors}</div>
-        
+        {toggleError ? 
+          <div className="error-container">
+            <div>{errors}</div>
+          </div>
+        :
+        null
+        }
       </div>
     </div>
   );
