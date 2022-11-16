@@ -8,8 +8,8 @@
     --character-y: 110;
     --map-x: 0;
     --map-y: 0;
-    --map-upper-x: (-65);
-    --map-upper-y: (-65);
+    --map-upper-x: calc(-65);
+    --map-upper-y: calc(-65);
     --map-img: url("../images/LevelOne.png");
  }
  
@@ -68,12 +68,12 @@
 
  .LevelOne {
    background-image: url("../images/LevelOne_lower.png");
-   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)* -1), 0);
+   transform: translate3d(calc(var(--map-x) * var(--pixel-size) * -1), calc(var(--map-y) * var(--pixel-size) * -1), 0);
  }
 
  .LevelTwo {
    background-image: url("../images/LevelTwo_lower.png");
-   transform: translate3d(calc(var(--map-x)*var(--pixel-size)*-1), calc(var(--map-y)*var(--pixel-size)* -1), 0);
+   transform: translate3d(calc(var(--map-x) * var(--pixel-size) * -1), calc(var(--map-y) * var(--pixel-size) * -1), 0);
  }
 
  .LevelOneUpper {
@@ -86,12 +86,12 @@
 
 .player {
     position: absolute;
-    transform: translate3d(calc(var(--player-x)*var(--pixel-size)), calc(var(--player-y)*var(--pixel-size)), 0);
+    transform: translate3d(calc(var(--player-x) * var(--pixel-size)), calc(var(--player-y) * var(--pixel-size)), 0);
 }
 
 .character {
    position: absolute;
-   transform: translate3d(calc(var(--character-x)*var(--pixel-size)), calc(var(--character-y)*var(--pixel-size)), 0);
+   transform: translate3d(calc(var(--character-x) * var(--pixel-size)), calc(var(--character-y) * var(--pixel-size)), 0);
 }
 
 .patrol {
@@ -104,17 +104,17 @@
    top: 0px;
 }
 25%{
-   left:calc(var(--pixel-size)*100);
+   left:calc(var(--pixel-size) * 100);
    
    top: 0px;
 }
 50%{
-   left:calc(var(--pixel-size)*100);
-   top:calc(var(--pixel-size)*100);
+   left:calc(var(--pixel-size) * 100);
+   top:calc(var(--pixel-size) * 100);
 }
 75%{
    left:0px;
-   top: calc(var(--pixel-size)*100);
+   top: calc(var(--pixel-size) * 100);
 }
 100%{
    left: 0px;
@@ -123,18 +123,18 @@
 }
 
 .char-img {
-   width: calc( var(--grid-cell)* 0.7);
-   height: calc( var(--grid-cell)* 0.7);
+   width: calc( var(--grid-cell) * 0.7);
+   height: calc( var(--grid-cell) * 0.7);
 }
 
 .coin-img {
-   width: calc( var(--grid-cell)* 0.5);
-   height: calc( var(--grid-cell)* 0.5);
+   width: calc( var(--grid-cell) * 0.5);
+   height: calc( var(--grid-cell) * 0.5);
 }
 
 .player-bound {
    overflow: hidden;
-   width: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
 }
 
 .player-spritesheet {
@@ -145,74 +145,74 @@
 
 .right {
    background-image: url("../images/MainCharacter.png");
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .up {
    background-image: url("../images/MainCharacter.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .down {
    background-image: url("../images/MainCharacter.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .left {
    background-image: url("../images/MainCharacter-left.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
 
  .right-axe {
    background-image: url("../images/MainCharacter-axe.png");
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .up-axe {
    background-image: url("../images/MainCharacter-axe.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .down-axe {
    background-image: url("../images/MainCharacter-axe.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .left-axe {
    background-image: url("../images/MainCharacter-left-axe.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
 
  .right-sword {
    background-image: url("../images/MainCharacter-sword.png");
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .up-sword {
    background-image: url("../images/MainCharacter-sword.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .down-sword {
    background-image: url("../images/MainCharacter-sword.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
  .left-sword {
    background-image: url("../images/MainCharacter-left-sword.png");
    background-repeat: no-repeat;
-   width: calc( var(--grid-cell)* 1 );
-   height: calc( var(--grid-cell)* 1 );
+   width: calc( var(--grid-cell) * 1 );
+   height: calc( var(--grid-cell) * 1 );
  }
 
  .walking-right {
@@ -220,8 +220,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
-    width: calc( var(--grid-cell)* 8);
-    height: calc( var(--grid-cell)* 1 );
+    width: calc( var(--grid-cell) * 8);
+    height: calc( var(--grid-cell) * 1 );
     animation: walkAnimation 0.6s steps(4) infinite; 
    }
 
@@ -230,8 +230,8 @@
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
-      width: calc( var(--grid-cell)* 8);
-      height: calc( var(--grid-cell)* 1 );
+      width: calc( var(--grid-cell) * 8);
+      height: calc( var(--grid-cell) * 1 );
       animation: walkAnimation 0.6s steps(4) infinite; 
      }
 
@@ -240,8 +240,8 @@
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
-      width: calc( var(--grid-cell)* 8);
-      height: calc( var(--grid-cell)* 1 );
+      width: calc( var(--grid-cell) * 8);
+      height: calc( var(--grid-cell) * 1 );
       animation: walkAnimation 0.6s steps(4) infinite; 
      }
 
@@ -250,8 +250,8 @@
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
-      width: calc( var(--grid-cell)* 8);
-      height: calc( var(--grid-cell)* 1 );
+      width: calc( var(--grid-cell) * 8);
+      height: calc( var(--grid-cell) * 1 );
       animation: walkAnimation 0.6s steps(4) infinite; 
      }
 
@@ -260,8 +260,8 @@
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
-      width: calc( var(--grid-cell)* 8);
-      height: calc( var(--grid-cell)* 1 );
+      width: calc( var(--grid-cell) * 8);
+      height: calc( var(--grid-cell) * 1 );
       animation: walkAnimation 0.6s steps(4) infinite; 
      }
   
@@ -270,8 +270,8 @@
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        width: calc( var(--grid-cell)* 8);
-        height: calc( var(--grid-cell)* 1 );
+        width: calc( var(--grid-cell) * 8);
+        height: calc( var(--grid-cell) * 1 );
         animation: walkAnimation 0.6s steps(4) infinite; 
        }
   
@@ -280,8 +280,8 @@
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        width: calc( var(--grid-cell)* 8);
-        height: calc( var(--grid-cell)* 1 );
+        width: calc( var(--grid-cell) * 8);
+        height: calc( var(--grid-cell) * 1 );
         animation: walkAnimation 0.6s steps(4) infinite; 
        }
   
@@ -290,8 +290,8 @@
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        width: calc( var(--grid-cell)* 8);
-        height: calc( var(--grid-cell)* 1 );
+        width: calc( var(--grid-cell) * 8);
+        height: calc( var(--grid-cell) * 1 );
         animation: walkAnimation 0.6s steps(4) infinite; 
        }
 
@@ -300,8 +300,8 @@
          background-repeat: no-repeat;
          background-size: 100%;
          position: relative;
-         width: calc( var(--grid-cell)* 8);
-         height: calc( var(--grid-cell)* 1 );
+         width: calc( var(--grid-cell) * 8);
+         height: calc( var(--grid-cell) * 1 );
          animation: walkAnimation 0.6s steps(4) infinite; 
         }
      
@@ -310,8 +310,8 @@
            background-repeat: no-repeat;
            background-size: 100%;
            position: relative;
-           width: calc( var(--grid-cell)* 8);
-           height: calc( var(--grid-cell)* 1 );
+           width: calc( var(--grid-cell) * 8);
+           height: calc( var(--grid-cell) * 1 );
            animation: walkAnimation 0.6s steps(4) infinite; 
           }
      
@@ -320,8 +320,8 @@
            background-repeat: no-repeat;
            background-size: 100%;
            position: relative;
-           width: calc( var(--grid-cell)* 8);
-           height: calc( var(--grid-cell)* 1 );
+           width: calc( var(--grid-cell) * 8);
+           height: calc( var(--grid-cell) * 1 );
            animation: walkAnimation 0.6s steps(4) infinite; 
           }
      
@@ -330,8 +330,8 @@
            background-repeat: no-repeat;
            background-size: 100%;
            position: relative;
-           width: calc( var(--grid-cell)* 8);
-           height: calc( var(--grid-cell)* 1 );
+           width: calc( var(--grid-cell) * 8);
+           height: calc( var(--grid-cell) * 1 );
            animation: walkAnimation 0.6s steps(4) infinite; 
           }
           
@@ -340,8 +340,8 @@
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
-      width: calc( var(--grid-cell)* 8);
-      height: calc( var(--grid-cell)* 1 );
+      width: calc( var(--grid-cell) * 8);
+      height: calc( var(--grid-cell) * 1 );
       animation: walkAnimation 0.6s steps(4) infinite; 
      }
   
@@ -350,8 +350,8 @@
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        width: calc( var(--grid-cell)* 8);
-        height: calc( var(--grid-cell)* 1 );
+        width: calc( var(--grid-cell) * 8);
+        height: calc( var(--grid-cell) * 1 );
         animation: walkAnimation 0.6s steps(4) infinite; 
        }
   
@@ -360,8 +360,8 @@
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        width: calc( var(--grid-cell)* 8);
-        height: calc( var(--grid-cell)* 1 );
+        width: calc( var(--grid-cell) * 8);
+        height: calc( var(--grid-cell) * 1 );
         animation: walkAnimation 0.6s steps(4) infinite; 
        }
   
@@ -370,17 +370,17 @@
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        width: calc( var(--grid-cell)* 8);
-        height: calc( var(--grid-cell)* 1 );
+        width: calc( var(--grid-cell) * 8);
+        height: calc( var(--grid-cell) * 1 );
         animation: walkAnimation 0.6s steps(4) infinite; 
        }
    
    @keyframes walkAnimation {
      from {
-       transform: translate3d(0%,0%,0);
+       transform: translate3d(0%, 0%, 0);
      }
      to {
-       transform: translate3d( -100%,0%,0);
+       transform: translate3d(-100%, 0%, 0);
      }
    }
 
